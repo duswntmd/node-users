@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>게시물 삭제</title>
+</head>
+<body>
+  <h2>게시물 삭제</h2>
+  <p>정말로 이 게시물을 삭제하시겠습니까?</p>
+  <form method="post" action="/delete">
+    <input type="hidden" name="id" value="<%= post.id %>">
+    <p><button type="submit">삭제</button></p>
+  </form>
+</body>
+</html>

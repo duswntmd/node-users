@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>게시물 수정</title>
+</head>
+<body>
+  <h2>게시물 수정</h2>
+  <form method="post" action="/update">
+    <input type="hidden" name="id" value="<%= post.id %>">
+    <p><input type="text" name="title" placeholder="제목" value="<%= post.title %>"></p>
+    <p><textarea name="content" placeholder="내용"><%= post.content %></textarea></p>
+    <p><input type="text" name="author" placeholder="작성자" value="<%= post.author %>"></p>
+    <p><input type="text" name="image" placeholder="이미지 업로드" value="<%= post.image_url %>"></p>
+    <p><button type="submit">수정</button></p>
+  </form>
+</body>
+</html>

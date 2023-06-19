@@ -1,0 +1,11 @@
+</head>
+<body>
+  <h2><%= post.title %></h2>
+  <p>작성자: <%= post.author %></p>
+  <img src="/uploads/<%= post.image_url %>" alt="게시물 이미지">
+  <p><%= post.content %></p>
+  <p>작성일: <%= post.created_at %></p>
+  <a href="/edit?id=<%= post.id %>">수정</a>
+  <a href="/delete?id=<%= post.id %>">삭제</a>
+</body>
+</html>
